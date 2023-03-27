@@ -1,392 +1,182 @@
+.btnBox {
+    display: flex;
+    flex-direction: row;
+}
+.prev,
+.next {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff9900;
+    color: #ffff;
+    align-content: center;
+}
+
 #header {
-  position: absolute;
-  width: 100%;
-  z-index: 5555;
+    position: absolute;
+    width: 100%;
+    z-index: 5555;
 }
 #header > .name {
-  display: inline-block;
-  margin: 2%;
-  font-size: 24px;
-  line-height: 34px;
-  color: #ff9900;
-  z-index: 5555;
+    display: inline-block;
+    margin: 2%;
+    font-size: 24px;
+    line-height: 34px;
+    color: #ff9900;
+    z-index: 5555;
 }
 
 #header .fix {
-  position: fixed;
-  width: 100px;
-  height: 33px;
-  text-align: center;
-  color: #ffff;
-  background-color: #ff9900;
-  border-radius: 30px 30px 30px 30px;
+    position: fixed;
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    color: #ffff;
+    background-color: #ff9900;
+    border-radius: 30px 30px 30px 30px;
 }
 
 #sec1 {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  background: linear-gradient(0deg, rgba(2, 1, 1, 0.2), rgba(2, 1, 1, 0.2)),
-    url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 700px;
-  margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(0deg, rgba(2, 1, 1, 0.2), rgba(2, 1, 1, 0.2)), url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    margin: 0 auto;
 }
 
 #sec1 h2 {
-  position: relative;
-  color: #ffff;
-  text-align: center;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
-  /* or 122% */
-  text-align: center;
-  left: 0;
-  transform: translate(0%, 60%);
+    position: relative;
+    color: #ffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    /* or 122% */
+    text-align: center;
+    left: 0;
+    transform: translate(0%, 60%);
 }
 
 #sec1 .bnt {
-  width: 298px;
-  height: 51px;
-  position: relative;
-  left: 42%;
-  top: 18%;
-  border: none;
-  color: #ffff;
-  font-size: 24px;
-  font-weight: 500;
-  background-color: #ff9900;
-  border-radius: 30px;
-  cursor: pointer;
+    width: 298px;
+    height: 51px;
+    position: relative;
+    left: 42%;
+    top: 18%;
+    border: none;
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #ff9900;
+    border-radius: 30px;
+    cursor: pointer;
 }
 #sec1 .bnt:hover {
-  background-color: #d17d00;
+    background-color: #d17d00;
 }
 
 /* <---> */
 
 #taps {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1% 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1% 0;
 }
 
 #taps > .tapss > .tap {
-  cursor: pointer;
+    cursor: pointer;
 }
 .orange {
-  color: #ff9900;
-  border-bottom: 5px solid #ff9900;
-  height: 41px;
-  font-size: 32px;
-  font-weight: 500;
+    color: #ff9900;
+    border-bottom: 5px solid #ff9900;
+    height: 41px;
+    font-size: 32px;
+    font-weight: 500;
 }
 
 #taps .tapss {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0px;
-  gap: 80px;
-  color: black;
-  width: 100%;
-  height: 41px;
-  font-size: 32px;
-  font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 80px;
+    color: black;
+    width: 100%;
+    height: 41px;
+    font-size: 32px;
+    font-weight: 500;
 }
 /* --- */
 
 #sec2 {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-#sec2 .content {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-#sec2 .content > .cntDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 64px;
-  opacity: 0;
-  transition: all 0.8s;
-}
-#sec2 .content > .cntDiv > img {
-  width: 80%;
-}
-
-#sec2 .content > .cntDiv > h2 {
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-  color: #ff9900;
-  margin-top: 80px;
-}
-#sec2 .content > .cntDiv > p {
-  font-weight: 400;
-  font-size: 24px;
-  color: #5c5c5c;
-  line-height: 34px;
-  margin-right: 9%;
-}
-
-#sec2 .content > .cntDiv > .roopTw {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-  gap: 32px;
-}
-
-#sec2 .content > .cntDiv > .roopTw2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 858px;
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-  gap: 32px;
-}
-#sec2 .content > .cntDiv > .roopTw3 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-  gap: 32px;
-  overflow: hidden;
-}
-
-#sec2 .content > .cntDiv > .roopTw > .contentCard {
-  width: 24%;
-  margin-bottom: 15%;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 40px 50px 20px 20px;
-}
-#sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox {
-  width: 100%;
-}
-#sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox > img {
-  width: 100%;
-}
-
-#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7% 5%;
-  gap: 10px;
-}
-#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text1 {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 24px;
-  color: #d17d00;
-}
-#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text2 {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 24px;
-  color: #5c5c5c;
-}
-#sec2 .content > .cntDiv > .roopTw > .contentCard:hover {
-  box-shadow: 2.5px 15px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* -------- */
-#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall {
-  width: 261px;
-  height: 289px;
-  box-shadow: 1px 10px rgba(217, 217, 217, 0.5);
-  border-radius: 30px;
-  background-color: #ffff;
-}
-
-#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox {
-  padding: 5%;
-}
-
-#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox > .text1 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  margin: 5%;
-  /* identical to box height, or 142% */
-  color: #5c5c5c;
-}
-#sec2 .content > .cntDiv > .roopTw3 > p {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  color: black;
-}
-#sec2 .content > .cntDiv > .roopTw3 > {
-  max-width: 1200px;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* ---- */
-
-#sec2 .content > .cntDiv > .banner1 {
-  width: 80%;
-  margin: 5% auto;
-}
-
-/* --- */
-
-#sec3 {
-  max-width: 1200px;
-  width: 100%;
-  height: 663px;
-  margin: 0 auto;
-}
-#sec3 > img {
-  width: 100%;
-  height: 100%;
-}
-
-/* --- */
-.slider {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0px;
-  gap: 16px;
-  overflow: hidden;
-}
-
-.slick-slide {
-  margin: 0px 20px;
-  transition: all ease-in-out 0.3s;
-  opacity: 1;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-.slick-active {
-  opacity: 1;
-}
-
-.slick-current {
-  opacity: 1;
-}
-
-@media all and (max-width: 480px) {
-  html {
-    font-size: 8px;
-  }
-  #header {
-    position: absolute;
-    width: 100%;
-    z-index: 5555;
-  }
-  #header > .name {
-    font-size: 1rem;
-  }
-
-  /* sec1 */
-  #sec1 {
-    width: 100%;
-    height: 500px;
-  }
-  #sec1 h2 {
-    font-size: 22.5px;
-    line-height: 26px;
-    /* or 122% */
-    left: -15%;
-    transform: translate(15%, 190%);
-  }
-
-  #sec1 .bnt {
-    width: 111px;
-    height: 25px;
-    left: 38%;
-    top: 32%;
-    font-size: 7px;
-  }
-
-  /* tap */
-
-  .orange {
-    color: #ff9900;
-    border-bottom: 5px solid #ff9900;
-    height: 24px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  #taps .tapss {
-    gap: 40px;
-    color: black;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  /* sec2 */
-
-  #sec2 {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-  }
-  #sec2 .content {
+}
+#sec2 .content {
     display: none;
     flex-direction: column;
     align-items: center;
-  }
-  #sec2 .content > .cntDiv {
-    gap: 15px;
-  }
-
-  #sec2 .content > .cntDiv > h2 {
-    font-size: 22.5px;
-    margin-top: 40px;
-  }
-  #sec2 .content > .cntDiv > p {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 5%;
-    margin-right: 3%;
-  }
-
-  #sec2 .content > .cntDiv > .roopTw {
-    justify-content: none;
+}
+#sec2 .content > .cntDiv {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    gap: 64px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+#sec2 .content > .cntDiv > img {
+    width: 80%;
+}
+
+#sec2 .content > .cntDiv > h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #ff9900;
+    margin-top: 80px;
+}
+#sec2 .content > .cntDiv > p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #5c5c5c;
+    line-height: 34px;
+    margin-right: 9%;
+}
+
+#sec2 .content > .cntDiv > .roopTw {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 0px;
     margin: 0 auto;
-    width: 100%;
-    gap: 16px;
-  }
+    gap: 32px;
+}
 
-  #sec2 .content > .cntDiv > .roopTw2 {
-    gap: 8px;
-  }
-  #sec2 .content > .cntDiv > .roopTw3 {
+#sec2 .content > .cntDiv > .roopTw2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 858px;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    gap: 32px;
+}
+#sec2 .content > .cntDiv > .roopTw3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -395,80 +185,322 @@
     margin: 0 auto;
     gap: 32px;
     overflow: hidden;
-  }
+}
 
-  #sec2 .content > .cntDiv > .roopTw > .contentCard {
-    width: 28%;
+#sec2 .content > .cntDiv > .roopTw > .contentCard {
+    width: 24%;
     margin-bottom: 15%;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 40px 50px 20px 20px;
-  }
-  #sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox {
+}
+#sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox {
     width: 100%;
-  }
-  #sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox > img {
+}
+#sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox > img {
     width: 100%;
-  }
+}
 
-  #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox {
-    gap: 0;
-  }
-  #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text1 {
-    font-size: 10px;
-    line-height: 20px;
-  }
-  #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text2 {
-    font-size: 10px;
-    line-height: 20px;
-  }
-  #sec2 .content > .cntDiv > .roopTw > .contentCard:hover {
-    box-shadow: 2.5px 15px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  /* -------- */
-  #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall {
-    width: 120px;
-    height: 120px;
-  }
-
-  #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .imgBox > img {
-    width: 100%;
-  }
-
-  #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox {
-    padding: 5%;
-  }
-
-  #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox > .text1 {
-    font-size: 10px;
-    line-height: 20px;
-    margin: -3%;
-  }
-  #sec2 .content > .cntDiv > .roopTw3 > p {
-    font-size: 16px;
+#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7% 5%;
+    gap: 10px;
+}
+#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text1 {
+    font-weight: 400;
+    font-size: 21px;
     line-height: 24px;
-  }
-  #sec2 .content > .cntDiv > .roopTw3 > {
+    color: #d17d00;
+}
+#sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text2 {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    color: #5c5c5c;
+}
+#sec2 .content > .cntDiv > .roopTw > .contentCard:hover {
+    box-shadow: 2.5px 15px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* -------- */
+#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall {
+    width: 261px;
+    height: 289px;
+    box-shadow: 1px 10px rgba(217, 217, 217, 0.5);
+    border-radius: 30px;
+    background-color: #ffff;
+}
+
+#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox {
+    padding: 5%;
+}
+
+#sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox > .text1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 5%;
+    /* identical to box height, or 142% */
+    color: #5c5c5c;
+}
+#sec2 .content > .cntDiv > .roopTw3 > p {
+    display: inline;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: black;
+}
+
+#sec2 .content > .cntDiv > .roopTw3 {
     max-width: 1200px;
     width: 100%;
     overflow: hidden;
-  }
+}
+#sec2 .content > .cntDiv > .roopTw3 > .slide {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    transition: all 0.5s;
+}
 
-  #sec3 {
-    height: 370px;
+#sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall {
+    width: 258px;
+    height: 293px;
+    border-radius: 30px 40px 10px 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1%;
+}
+
+#sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall > .imgBox > img {
+    width: 100%;
+}
+
+#sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall > .textBox {
+    padding: 4%;
+}
+#sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall > .textBox > .text1 {
+    font-weight: 500;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    color: #d17d00;
+}
+#sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall > .textBox > .text2 {
+    font-weight: 500;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+    color: #5c5c5c;
+}
+
+/* ---- */
+
+#sec2 .content > .cntDiv > .banner1 {
+    width: 80%;
+    margin: 5% auto;
+}
+
+/* --- */
+
+#sec3 {
+    max-width: 1200px;
+    width: 100%;
+    height: 663px;
     margin: 0 auto;
-  }
-  #sec3 > img {
+}
+#sec3 > img {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .slick-slide {
-    margin: 0px 20px;
-    font-size: 8px;
-    line-height: 12px;
-    font-weight: 700;
-    transition: all ease-in-out 0.3s;
-    opacity: 1;
-  }
+@media all and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+    #header {
+        position: absolute;
+        width: 100%;
+        z-index: 5555;
+    }
+    #header > .name {
+        font-size: 1rem;
+    }
+
+    /* sec1 */
+    #sec1 {
+        width: 100%;
+        height: 500px;
+    }
+    #sec1 h2 {
+        font-size: 22.5px;
+        line-height: 26px;
+        /* or 122% */
+        left: -15%;
+        transform: translate(15%, 190%);
+    }
+
+    #sec1 .bnt {
+        width: 111px;
+        height: 25px;
+        left: 38%;
+        top: 32%;
+        font-size: 7px;
+    }
+
+    /* tap */
+
+    .orange {
+        color: #ff9900;
+        border-bottom: 5px solid #ff9900;
+        height: 24px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #taps .tapss {
+        gap: 40px;
+        color: black;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    /* sec2 */
+
+    #sec2 {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #sec2 .content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec2 .content > .cntDiv {
+        gap: 15px;
+    }
+
+    #sec2 .content > .cntDiv > h2 {
+        font-size: 22.5px;
+        margin-top: 40px;
+    }
+    #sec2 .content > .cntDiv > p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5%;
+        margin-right: 3%;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw {
+        justify-content: none;
+        align-items: center;
+        padding: 0px;
+        margin: 0 auto;
+        width: 100%;
+        gap: 16px;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw2 {
+        gap: 8px;
+    }
+    #sec2 .content > .cntDiv > .roopTw3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px;
+        margin: 0 auto;
+        gap: 32px;
+        overflow: hidden;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw > .contentCard {
+        width: 28%;
+        margin-bottom: 15%;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 40px 50px 20px 20px;
+    }
+    #sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox {
+        width: 100%;
+    }
+    #sec2 .content > .cntDiv > .roopTw > .contentCard > .imgBox > img {
+        width: 100%;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox {
+        gap: 0;
+    }
+    #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text1 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    #sec2 .content > .cntDiv > .roopTw > .contentCard > .textBox > .text2 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    #sec2 .content > .cntDiv > .roopTw > .contentCard:hover {
+        box-shadow: 2.5px 15px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* -------- */
+    #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall {
+        width: 120px;
+        height: 120px;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .imgBox > img {
+        width: 100%;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox {
+        padding: 5%;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw2 > .contentCardSmall > .textBox > .text1 {
+        font-size: 10px;
+        line-height: 20px;
+        margin: -3%;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw3 > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #sec2 .content > .cntDiv > .roopTw3 > {
+        max-width: 1200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall {
+        width: 163px;
+        height: 204px;
+    }
+    #sec2 .content > .cntDiv > .roopTw3 > .slide > .contentCardSmall > .textBox {
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .prev,
+    .next {
+        display: inline-block;
+        width: 50px;
+        height: 32px;
+        border-radius: 30px;
+        border: none;
+        background-color: #ff9900;
+        color: #ffff;
+    }
+
+    #sec3 {
+        height: 370px;
+        margin: 0 auto;
+    }
+
+    #sec3 > img {
+        width: 100%;
+        height: 100%;
+    }
 }
