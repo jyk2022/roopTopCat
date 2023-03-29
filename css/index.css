@@ -8,7 +8,7 @@
 .next {
     display: inline-block;
     width: 80px;
-    height: 20px;
+    height: 30px;
     border-radius: 30px;
     border: none;
     background-color: #ff9900;
@@ -59,7 +59,7 @@
     /* or 122% */
     text-align: center;
     left: 0;
-    transform: translate(0%, 60%);
+    transform: translate(0%, 96%);
 }
 
 #sec1 .bnt {
@@ -67,7 +67,7 @@
     height: 51px;
     position: relative;
     left: 42%;
-    top: 18%;
+    top: 26%;
     border: none;
     color: #ffff;
     font-size: 24px;
@@ -85,7 +85,7 @@
 #taps {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 1% 0;
 }
 
@@ -328,27 +328,27 @@
         z-index: 5555;
     }
     #header > .name {
-        font-size: 1rem;
+        font-size: 3rem;
+        margin: 4% 3%;
     }
 
     /* sec1 */
     #sec1 {
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
     #sec1 h2 {
-        font-size: 22.5px;
-        line-height: 26px;
-        /* or 122% */
+        font-size: 24px;
+        line-height: 30px;
         left: -15%;
-        transform: translate(15%, 190%);
+        transform: translate(15%, 142%);
     }
 
     #sec1 .bnt {
         width: 146px;
         height: 30px;
-        left: 33%;
-        top: 32%;
+        left: 34%;
+        top: 34%;
         font-size: 7px;
     }
 
@@ -393,8 +393,8 @@
     #sec2 .content > .cntDiv > p {
         font-size: 16px;
         line-height: 20px;
-        padding: 5%;
-        margin-right: 3%;
+        padding: 3%;
+        margin-right: -4%;
     }
 
     #sec2 .content > .cntDiv > .roopTw {
@@ -491,6 +491,12 @@
 
     .btnBox {
         margin: 0 65%;
+    }
+
+    .prev,
+    .next {
+        width: 80px;
+        height: 22px;
     }
 
     #sec3 {
